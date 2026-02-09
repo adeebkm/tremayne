@@ -111,14 +111,42 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
               </div>
             ) : (
               <div>
-                {paginatedResults.map((result) => {
+                {paginatedResults.map((result, index) => {
+                  const shouldShowTremayneImages = currentPage === 1 && index === 0;
+                  
                   return (
-                    <ResultCard
-                      key={result.id}
-                      result={result}
-                      onOpen={setSelectedResult}
-                      isDark={isDark}
-                    />
+                    <React.Fragment key={result.id}>
+                      {shouldShowTremayneImages && (
+                        <ImagesSection
+                          images={[
+                            {
+                              id: 'tremayne-img-1',
+                              title: 'Tremayne Washington – LinkedIn',
+                              source: 'LinkedIn',
+                              imageUrl: '/greg1.jpeg'
+                            },
+                            {
+                              id: 'tremayne-img-2',
+                              title: 'Tremayne Washington – Facebook',
+                              source: 'Facebook',
+                              imageUrl: '/greg2.jpeg'
+                            },
+                            {
+                              id: 'tremayne-img-3',
+                              title: 'Tremayne Washington – Professional Profile',
+                              source: 'Professional Network',
+                              imageUrl: '/greg3.jpeg'
+                            }
+                          ]}
+                          isDark={isDark}
+                        />
+                      )}
+                      <ResultCard
+                        result={result}
+                        onOpen={setSelectedResult}
+                        isDark={isDark}
+                      />
+                    </React.Fragment>
                   );
                 })}
               </div>
