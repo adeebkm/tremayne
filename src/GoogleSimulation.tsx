@@ -34,6 +34,12 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
 
   // Get results for Tremayne
   const allResults = useMemo(() => {
+    console.log('Loading RESULTS_Brycen_Tremayne:', RESULTS_Brycen_Tremayne);
+    if (!RESULTS_Brycen_Tremayne || RESULTS_Brycen_Tremayne.length === 0) {
+      console.error('RESULTS_Brycen_Tremayne is empty or undefined!');
+      return [];
+    }
+    console.log('Loaded', RESULTS_Brycen_Tremayne.length, 'results');
     return RESULTS_Brycen_Tremayne;
   }, []);
 

@@ -57,6 +57,7 @@ class ErrorBoundary extends Component<Props, State> {
 function App() {
   // Add a simple check to see if we can render at all
   console.log('App component rendering...');
+  console.log('Environment:', import.meta.env.MODE);
   
   try {
     return (
@@ -69,9 +70,12 @@ function App() {
   } catch (error) {
     console.error('Error in App render:', error);
     return (
-      <div style={{ padding: '20px', textAlign: 'center' }}>
-        <h1>Error loading app</h1>
-        <p>{String(error)}</p>
+      <div style={{ padding: '20px', textAlign: 'center', backgroundColor: '#fff', minHeight: '100vh' }}>
+        <h1 style={{ color: '#d32f2f' }}>Error loading app</h1>
+        <p style={{ color: '#666' }}>{String(error)}</p>
+        <pre style={{ textAlign: 'left', background: '#f5f5f5', padding: '10px', borderRadius: '4px', overflow: 'auto' }}>
+          {error instanceof Error ? error.stack : String(error)}
+        </pre>
       </div>
     );
   }
