@@ -290,7 +290,7 @@ export const generateLinkedInProfile = (resultId: string): LinkedInProfileData =
   }
 
   // Tremayne Washington - Financial Analyst
-  if (resultId === 'tremayne11' || resultId.includes('tremayne')) {
+  if (resultId === 'tremayne5' || resultId.includes('tremayne')) {
     return {
       name: 'Tremayne Washington',
       headline: 'Financial Analyst | Investment Analysis & Portfolio Management',

@@ -217,7 +217,7 @@ export const generateFacebookProfile = (resultId: string): FacebookProfileData =
   }
 
   // Tremayne Washington - Financial Analyst (Music, food, family)
-  if (resultId === 'tremayne7' || resultId.includes('tremayne')) {
+  if (resultId === 'tremayne6' || resultId.includes('tremayne')) {
     return {
       name: 'Tremayne Washington',
       friends: '390 friends',
