@@ -2070,6 +2070,13 @@ export const RESULTS_High_Absent: SimResult[] = [
 
 
 
+
+// Condition D: Low Discoverability + Footprint Absent
+
+export const RESULTS_Low_Absent: SimResult[] = [
+  // Empty array - will show "No results found" message
+];
+
 // Condition C: Low Discoverability + Footprint Present
 
 
