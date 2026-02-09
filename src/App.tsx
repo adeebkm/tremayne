@@ -58,13 +58,23 @@ function App() {
   // Add a simple check to see if we can render at all
   console.log('App component rendering...');
   
-  return (
-    <ErrorBoundary>
-      <div style={{ minHeight: '100vh', backgroundColor: '#fff' }}>
-        <GoogleSimulation searchType="tremayne" />
+  try {
+    return (
+      <ErrorBoundary>
+        <div style={{ minHeight: '100vh', backgroundColor: '#fff' }}>
+          <GoogleSimulation searchType="tremayne" />
+        </div>
+      </ErrorBoundary>
+    );
+  } catch (error) {
+    console.error('Error in App render:', error);
+    return (
+      <div style={{ padding: '20px', textAlign: 'center' }}>
+        <h1>Error loading app</h1>
+        <p>{String(error)}</p>
       </div>
-    </ErrorBoundary>
-  );
+    );
+  }
 }
 
 export default App;
