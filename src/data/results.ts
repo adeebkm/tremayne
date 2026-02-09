@@ -3055,4 +3055,3 @@ export const RESULTS = {
   Brycen_Tremayne: RESULTS_Brycen_Tremayne,
   Meredith_Mueller: RESULTS_Meredith_Mueller,
 };
-};
