@@ -129,19 +129,19 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
                               id: 'tremayne-img-1',
                               title: 'Tremayne Washington – LinkedIn',
                               source: 'LinkedIn',
-                              imageUrl: '/greg1.jpeg'
+                              imageUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop&crop=faces&auto=format'
                             },
                             {
                               id: 'tremayne-img-2',
                               title: 'Tremayne Washington – Facebook',
                               source: 'Facebook',
-                              imageUrl: '/greg2.jpeg'
+                              imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces&auto=format'
                             },
                             {
                               id: 'tremayne-img-3',
                               title: 'Tremayne Washington – Professional Profile',
                               source: 'Professional Network',
-                              imageUrl: '/greg3.jpeg'
+                              imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces&auto=format'
                             }
                           ]}
                           isDark={isDark}
