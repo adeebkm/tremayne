@@ -70,4 +70,26 @@ export const getFakeVideoThumbnail = (videoId: string): string => {
   return getAIGeneratedBanner(videoId, 400, 225);
 };
 
+/**
+ * Get photos from Photos folder based on race and gender
+ */
+export const getPersonaPhotos = (race: 'White American' | 'African American', gender: 'Male' | 'Female'): string[] => {
+  const raceFolder = race === 'White American' ? 'Race - White' : 'Race - Black';
+  const genderFolder = gender === 'Male' ? 'Male' : 'Female';
+  const basePath = `/Photos/${raceFolder} - ${genderFolder}`;
+  
+  // Select 5 photos based on race and gender
+  if (race === 'African American' && gender === 'Male') {
+    return [
+      `${basePath}/4fd6816a-d38e-4748-9f63-f5c712f073ae.jpg`,
+      `${basePath}/580eadd0-f656-498d-b3c1-eb8d3628e7f5.jpg`,
+      `${basePath}/797e87d8-3642-4dc9-94a6-4f2ba56ce7a8.jpg`,
+      `${basePath}/90bd288c-9c18-45ea-90b1-6e72129e440e.jpg`,
+      `${basePath}/980f74ff-5e0f-4f7d-a044-3433547ed748.jpg`
+    ];
+  }
+  
+  return [];
+};
+
 
