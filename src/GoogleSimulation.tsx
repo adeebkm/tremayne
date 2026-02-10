@@ -136,12 +136,6 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
                               title: 'Tremayne Washington – Facebook',
                               source: 'Facebook',
                               imageUrl: 'https://images.unsplash.com/photo-1578758837674-93ed0ab5fbab?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWZyaWNhbiUyMGFtZXJpY2FuJTIwbWFufGVufDB8fDB8fHww'
-                            },
-                            {
-                              id: 'tremayne-img-3',
-                              title: 'Tremayne Washington – Professional Profile',
-                              source: 'Professional Network',
-                              imageUrl: 'https://www.blackmenshealth.com/wp-content/uploads/2022/09/My-Headshot-1-500x497.jpg'
                             }
                           ]}
                           isDark={isDark}
