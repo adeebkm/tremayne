@@ -38,7 +38,7 @@ export type SimResult = {
 
 
 
-  race: "African American" | "African American";
+  race: "White American" | "African American";
 
 
 
