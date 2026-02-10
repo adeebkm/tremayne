@@ -38,7 +38,7 @@ export type SimResult = {
 
 
 
-  race: "White American" | "African American";
+  race: "African American" | "African American";
 
 
 
@@ -242,7 +242,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -386,7 +386,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -434,7 +434,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -530,7 +530,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -626,7 +626,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -674,7 +674,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -722,7 +722,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -770,7 +770,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -818,7 +818,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -866,7 +866,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -914,7 +914,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -962,7 +962,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1010,7 +1010,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1058,7 +1058,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1106,7 +1106,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1154,7 +1154,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1202,7 +1202,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1250,7 +1250,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1298,7 +1298,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1346,7 +1346,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1442,7 +1442,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1730,7 +1730,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1826,7 +1826,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1874,7 +1874,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1922,7 +1922,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -1970,7 +1970,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2018,7 +2018,7 @@ export const RESULTS_High_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2221,7 +2221,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2269,7 +2269,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2509,7 +2509,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2605,7 +2605,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2653,7 +2653,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2701,7 +2701,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2749,7 +2749,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2845,7 +2845,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -2941,7 +2941,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3085,7 +3085,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3181,7 +3181,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3325,7 +3325,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3613,7 +3613,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3661,7 +3661,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3709,7 +3709,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3853,7 +3853,7 @@ export const RESULTS_Low_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3925,7 +3925,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -3977,7 +3977,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4041,7 +4041,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4093,7 +4093,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4141,7 +4141,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4189,7 +4189,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4249,7 +4249,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4297,7 +4297,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4353,7 +4353,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4405,7 +4405,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4461,7 +4461,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4509,7 +4509,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4557,7 +4557,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4605,7 +4605,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4653,7 +4653,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4701,7 +4701,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4749,7 +4749,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4797,7 +4797,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4845,7 +4845,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4893,7 +4893,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4945,7 +4945,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -4993,7 +4993,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5041,7 +5041,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5089,7 +5089,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5141,7 +5141,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5189,7 +5189,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5237,7 +5237,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5289,7 +5289,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5337,7 +5337,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5385,7 +5385,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5437,7 +5437,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5485,7 +5485,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5533,7 +5533,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5581,7 +5581,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5629,7 +5629,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5677,7 +5677,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5725,7 +5725,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5773,7 +5773,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5821,7 +5821,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5869,7 +5869,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5917,7 +5917,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -5965,7 +5965,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -6013,7 +6013,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -6061,7 +6061,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -6113,7 +6113,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
 
 
-    race: "White American",
+    race: "African American",
 
 
 
@@ -6139,7 +6139,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6163,7 +6163,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6187,7 +6187,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6211,7 +6211,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6235,7 +6235,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6259,7 +6259,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6283,7 +6283,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6307,7 +6307,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6331,7 +6331,7 @@ export const RESULTS_Adeeb_Present: SimResult[] = [
 
     footprint: "Present",
 
-    race: "White American",
+    race: "African American",
 
     location: "Washington, DC",
 
@@ -6352,7 +6352,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.linkedin.com › pub › dir › Tremayne › Washington",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-linkedin-dir"
   },
@@ -6364,7 +6364,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "hksflaw.com › People",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Connecticut",
     imageKey: "tremayne-hksf"
   },
@@ -6376,7 +6376,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "Instagram · deerrockknives",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     followers: "1.6K+",
     imageKey: "tremayne-insta"
@@ -6389,7 +6389,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "goleopards.com › sports › roster › tremayne-krieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Belvidere, N.J.",
     imageKey: "tremayne-football"
   },
@@ -6401,7 +6401,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "LinkedIn · Tremayne Washington",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Blairstown, New Jersey",
     followers: "590+",
     imageKey: "tremayne-linkedin-profile"
@@ -6414,7 +6414,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.facebook.com › public › Tremayne-Washington",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-facebook"
   },
@@ -6426,7 +6426,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "oswegolakers.com › mens-ice-hockey › roster",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Sauquoit, N.Y.",
     imageKey: "tremayne-hockey"
   },
@@ -6438,7 +6438,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "rockharboronline.com › meet-our-staff",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-church"
   },
@@ -6450,7 +6450,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "collections.carli.illinois.edu › digital › npu_oracol",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-interview"
   },
@@ -6463,7 +6463,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.kennedyfh.com › obituaries › Tremayne-Washington",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Essex",
     imageKey: "tremayne-obituary"
   },
@@ -6475,7 +6475,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.farringdon-law.co.uk › our-barristers › tremayne...",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "London",
     imageKey: "tremayne-barrister"
   },
@@ -6487,7 +6487,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "Instagram · tremayneggkrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     followers: "320+",
     imageKey: "tremayne-insta2"
@@ -6500,7 +6500,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.eliteprospects.com › player › tremayne-krieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-hockey-stats"
   },
@@ -6512,7 +6512,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.road-results.com › racer",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-racing"
   },
@@ -6524,7 +6524,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "profiles.superlawyers.com › ... › Hartford",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Hartford, CT",
     imageKey: "tremayne-superlawyers"
   },
@@ -6536,7 +6536,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "LinkedIn · Tremayne Washington, MBA",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Greater Indianapolis",
     followers: "500+",
     imageKey: "tremayne-linkedin-mba"
@@ -6549,7 +6549,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "ohioturfgrass.org › members",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Boardman, OH",
     imageKey: "tremayne-turfgrass"
   },
@@ -6561,7 +6561,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.missionsprings.com › Staff",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-mission"
   },
@@ -6574,7 +6574,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.martindale.com › Connecticut › Hartford",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Hartford, CT",
     imageKey: "tremayne-martindale"
   },
@@ -6586,7 +6586,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.facebook.com › public › Tremayne-Washington",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-facebook2"
   },
@@ -6598,7 +6598,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "obituaries.startribune.com › obituary › tremayneory-...",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-obituary2"
   },
@@ -6610,7 +6610,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.tributearchive.com › obituaries › tremayne-krie...",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "ESSEX, ON",
     imageKey: "tremayne-obituary3"
   },
@@ -6622,7 +6622,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "members.ctbar.org › members",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Hartford, CT",
     imageKey: "tremayne-ctbar"
   },
@@ -6634,7 +6634,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.evergreenmemorialfuneralhome.com › Tremayne-Washington...",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Middletown, NJ",
     imageKey: "tremayne-obituary4"
   },
@@ -6646,7 +6646,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.legal500.com › 1947265-tremayne-krieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "London",
     imageKey: "tremayne-legal500"
   },
@@ -6658,7 +6658,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.imdb.com › name",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "tremayne-imdb"
   },
@@ -6670,7 +6670,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.farringdon-law.co.uk › our-barristers",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "London",
     imageKey: "tremayne-cv"
   },
@@ -6682,7 +6682,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.ohioresidentdatabase.com › ... › Augusta Dr",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Boardman, OH",
     imageKey: "tremayne-ohio"
   },
@@ -6695,7 +6695,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.the100indianmuslims.com › Tremayne-Washington",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "avatar31"
   },
@@ -6707,7 +6707,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.amnestyusa.org › uaa",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar32"
   },
@@ -6719,7 +6719,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.carleton.edu › profiles › tremayne-krieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Northfield, MN",
     imageKey: "avatar32b"
   },
@@ -6731,7 +6731,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.state.gov › travel-information",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar32c"
   },
@@ -6743,7 +6743,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.japaneseintersystems.com › about",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar32d"
   },
@@ -6755,7 +6755,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "scholar.google.com › citations › user=gkrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar32"
   },
@@ -6767,7 +6767,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "theorg.com › org › lulu-financial-group › tremayne-krieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar33"
   },
@@ -6779,7 +6779,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.ahajournals.org › abs › SVIN.123.001004",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "avatar34"
   },
@@ -6791,7 +6791,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "freedomhouse.org › country › freedom-world › 2021",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "",
     imageKey: "avatar35"
   },
@@ -6803,7 +6803,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.instagram.com › tremaynekriegerofficial",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar36"
   },
@@ -6815,7 +6815,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "www.gwu.edu › student-directory › tremayne-krieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar37"
   },
@@ -6827,7 +6827,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "github.com › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar38"
   },
@@ -6839,7 +6839,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "medium.com › @tremaynekrieger › career-path",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar39"
   },
@@ -6851,7 +6851,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "about.me › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar40"
   },
@@ -6864,7 +6864,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "dev.to › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar41"
   },
@@ -6876,7 +6876,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "tremaynekrieger.hashnode.dev",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar42"
   },
@@ -6888,7 +6888,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "tremaynekrieger.substack.com",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar43"
   },
@@ -6900,7 +6900,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "tremaynekrieger.ghost.io",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar44"
   },
@@ -6912,7 +6912,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "tinyletter.com › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar45"
   },
@@ -6924,7 +6924,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "mailchimp.com › campaigns › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar46"
   },
@@ -6936,7 +6936,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "calendly.com › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar47"
   },
@@ -6948,7 +6948,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "zoom.us › profile › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar48"
   },
@@ -6960,7 +6960,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "sites.google.com › view › tremaynekrieger",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar49"
   },
@@ -6972,7 +6972,7 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     urlLike: "tremaynekrieger.weebly.com",
     discoverability: "High",
     footprint: "Present",
-    race: "White American",
+    race: "African American",
     location: "Washington, DC",
     imageKey: "avatar50"
   }
