@@ -105,8 +105,8 @@ export const FacebookProfileView: React.FC<FacebookProfileProps> = ({ resultId, 
               <svg width="20" height="20" viewBox="0 0 24 24" fill="#050505">{iconPath}</svg>
             </div>
           ))}
-          <button onClick={onClose} style={{ padding: '6px 12px', borderRadius: '6px', border: '1px solid #ddd', background: '#e4e6eb', cursor: 'pointer', fontWeight: 600, fontSize: '14px' }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ verticalAlign: 'middle', marginRight: '4px' }}><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <button onClick={onClose} style={{ backgroundColor: '#ffeb3b', color: '#000', border: 'none', borderRadius: '20px', padding: isMobile ? '6px 12px' : '8px 16px', cursor: 'pointer', fontWeight: 600, fontSize: isMobile ? '12px' : '14px', display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap', flexShrink: 0 }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             Back to search
           </button>
         </div>
