@@ -12,6 +12,7 @@ import {
   type SimResult
 } from './data/results';
 import { getRelatedSearches } from './data/relatedSearches';
+import { trackPageView, trackTabChange, trackPagination, trackSearch } from './utils/tracking';
 
 interface GoogleSimulationProps {
   searchType?: 'tremayne';
@@ -22,15 +23,43 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
   const [activeTab, setActiveTab] = useState('All');
   const [selectedResult, setSelectedResult] = useState<SimResult | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
   const resultsPerPage = 10;
 
   // Force light mode as requested
   const isDark = false;
 
+  // Check for mobile viewport
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Reset to first page when activeTab changes
   useEffect(() => {
     setCurrentPage(1);
   }, [activeTab]);
+
+  // Track page view on mount
+  useEffect(() => {
+    trackPageView('tremayne', currentPage, activeTab);
+  }, []);
+
+  // Track tab changes
+  useEffect(() => {
+    if (activeTab) {
+      trackTabChange(activeTab, 'tremayne');
+    }
+  }, [activeTab]);
+
+  // Track pagination
+  useEffect(() => {
+    if (currentPage > 1) {
+      trackPagination(currentPage, 'tremayne');
+    }
+  }, [currentPage]);
 
   // Get results for Tremayne
   const allResults = useMemo(() => {
@@ -99,10 +128,10 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
       <TopBar searchQuery={searchQuery} onSearchChange={setSearchQuery} isDark={isDark} />
       <Tabs activeTab={activeTab} onTabChange={setActiveTab} isDark={isDark} />
 
-      <div style={{ maxWidth: '1128px', margin: '0 auto', padding: '0 16px' }}>
-        <div style={{ display: 'flex', gap: '32px', paddingTop: '20px' }}>
+      <div style={{ maxWidth: '1128px', margin: '0 auto', padding: isMobile ? '0 8px' : '0 16px' }}>
+        <div style={{ display: 'flex', gap: isMobile ? '0' : '32px', paddingTop: isMobile ? '12px' : '20px' }}>
           {/* Main Results Column */}
-          <div style={{ flex: '1', minWidth: 0 }}>
+          <div style={{ flex: '1', minWidth: 0, width: '100%' }}>
             {/* Results Count */}
             <div style={{ color: '#70757a', fontSize: '14px', marginBottom: '16px' }}>
               About {filteredResults.length} results

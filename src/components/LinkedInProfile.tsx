@@ -12,6 +12,8 @@ const IISC_LOGO_BASE64 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAc
 const GWU_LOGO_BASE64 = "data:image/webp;base64,UklGRpgBAABXRUJQVlA4IIwBAACQCACdASogABsAPtEutFooIagoGAEAGglsAJ0ygzM1g7HgRwKfyxVH909R7PR9FewIMs7uah206j27PfVohMCz5NL2jSa/x3sni5nJAAD+1RbuaL1WJbfz8NJtqQS2cSY/6tFh8hlWm33EySdm6c9FgAF7G4Pb3zcEmmsUgOoms07Z0YjYDGfHmkc6pCpq2XPSNv2K0izqsLAhoXj1lHtXUt/lsKef0qhhGWvdNev/yVV+zniPnTbKomu0Ocrfx//Q8nJj5tDqvMLTq++dkEf4v/6065ncNqnECOz8m6x9PcGeGL/style={ width: '100%', height: '100%', objectFit: 'contain' } 3wazagNgv/wrOx1cpCxKivL3KPoS28ubQJe0m7EY+6+B2bxyVI3CMJyU7C4GC4ae4Zesus5aJup+VM2BeCXbtcG8nr65vTetBedF/FTdogyvgmlNli3hJisVGTOTAl3CRW48DPbcoO2UYtM+Rcu8L+8zl9nkkzAK5u+pLKFqH++of3788IpgYYGedTj2fXaI/LgtO49nnPuUR8OtoQBDMjcIrTekAAA=";
 const DC_GOV_LOGO_BASE64 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAM0lEQVR4AWP4TyKgh4bW1v8MYBIG8IswAFlQBAP4RRggWpGl8YiQ5wcGEhCNNYxoP5AIAMbUHWN1n/uoAAAAAElFTkSuQmCC";
 const RAMAIAH_LOGO_URL = "https://upload.wikimedia.org/wikipedia/en/5/5a/Ramaiah_Institutions_Logo.png";
+const CHICAGO_INVESTMENT_LOGO = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc1LTc3NzctNzc3Nzc3NzcuKzc3Ny01NzU3NzcrLSs1NzUrNzc3Nzc3KzUuNTU3N//AABEIACAAIAMBIgACEQEDEQH/xAAZAAEBAAMBAAAAAAAAAAAAAAAGBQMEBwH/xAAsEAACAQMDAgUCBwAAAAAAAAABAgMABBESITFBUQUTYXGxkeEUIjIzNHJz/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAMEAv/EABkRAAIDAQAAAAAAAAAAAAAAAAABAgMhEf/aAAwDAQACEQMRAD8A6v4zbRJM10YtghLkrqDHjGM7VMOifUEtYdCrqYBSpIG5PseMd6v+MRq9k5kk0xLu44BHvR8CAyDzLvW3neWGLE/kzkN9cj771ltXJFoPD1THEELWkIjlGpFIJIB65HQbbetUfB7eKWaO6EW2nKkLpCnjvvnf2qa4gSRjFd6XEoj1AkDGrc88cdTV7wWNUs1MchaJv0DOcDJ6+vNK12Qk8N2aMSxPG3DAg0ZjjuXjDG8bLKucRr1x6dwDSmjtv+yn9I/kVS1ajiBguI7qOGR/xhJCqTmNd989u+9JYIxDCkYOQqgZPWoN7/Gn/wA1+aRUrXGxN4f/2Q==";
+const MIDWEST_CAPITAL_LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAA+0lEQVR4AWJwL/ChKx5BFgbNDOZgADBP3kYIA0EUpRM8BRBRgwjVBHbrUKQOKEEl4GN1cC3gycXuzMcbueVGwQP5t7baJ2bNGCDHPuPIfVUhPhzFYPAcMe1Spd+Sf5wbZWE8eYRrxkHkgQ1hgOvXe9uXYIxNoXO9jh7aE2JgCiTEug3mXbIiZFGHiZiJptAwJJm8yDzIlIQxiCSv0Jep/FI2jzmrCV+H4K1HQEcIyUNPXG3h9rV0Ui68qC5cfxmAvb4Q05dSWM8sBPFCgDKHfxKih/GEEJEc5xFGOUktnDEuU8eK1DEwhHsKwpQgCEJJZ0CO3ctGXruUrhgAPCIEzKkNgO0AAAAASUVORK5CYII=";
 
 const companyColors: Record<string, string> = {
   'M': '#1a5276', 'C': '#1e8449', 'G': '#d35400', 'N': '#6c3483',
@@ -32,6 +34,19 @@ const CompanyLogo: React.FC<{ company: string; size?: number }> = ({ company, si
   const [imgError, setImgError] = React.useState(false);
   const initial = company.charAt(0).toUpperCase();
   const bgColor = getCompanyColor(company);
+  // Check for companies with provided base64 logos first
+  const base64Logos: Record<string, string> = {
+    'Chicago Investment': CHICAGO_INVESTMENT_LOGO,
+    'Midwest Capital': MIDWEST_CAPITAL_LOGO,
+  };
+  const matchedBase64 = Object.entries(base64Logos).find(([key]) => company.includes(key));
+  if (matchedBase64) {
+    return (
+      <div style={{ width: `${size}px`, height: `${size}px`, backgroundColor: '#fff', borderRadius: '4px', border: '1px solid #e0e0e0', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', flexShrink: 0 }}>
+        <img src={matchedBase64[1]} style={{ width: '80%', height: '80%', objectFit: 'contain' }} alt="" />
+      </div>
+    );
+  }
   const realCompanyDomains: Record<string, string> = {
     'Microsoft': 'microsoft.com', 'Amazon': 'amazon.com', 'Google': 'google.com',
     'Apple': 'apple.com', 'Meta': 'meta.com', 'IBM': 'ibm.com',
@@ -55,7 +70,14 @@ const CompanyLogo: React.FC<{ company: string; size?: number }> = ({ company, si
 
 export const LinkedInProfileView: React.FC<LinkedInProfileProps> = ({ resultId, onClose }) => {
   const [showStickyHeader, setShowStickyHeader] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   React.useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -104,21 +126,23 @@ export const LinkedInProfileView: React.FC<LinkedInProfileProps> = ({ resultId, 
     >
       {/* Navigation Bar */}
       <div style={{ backgroundColor: '#ffffff', borderBottom: '1px solid #e0e0e0', position: 'sticky', top: 0, zIndex: 100 }}>
-        <div style={{ maxWidth: '1128px', margin: '0 auto', height: '52px', display: 'flex', alignItems: 'center', padding: '0 24px' }}>
+        <div style={{ maxWidth: '1128px', margin: '0 auto', height: '52px', display: 'flex', alignItems: 'center', padding: isMobile ? '0 8px' : '0 24px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" style={{ borderRadius: '4px' }}>
               <rect width="34" height="34" rx="4" fill="#0a66c2" />
               <path d="M26.5 24.5h-3.555v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H15.351V14h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM9.337 11.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H7.555V14h3.564v10.452z" fill="white" />
             </svg>
-            <div style={{ position: 'relative', width: '280px' }}>
-              <input type="text" placeholder="Search" style={{ width: '100%', padding: '8px 12px 8px 36px', backgroundColor: '#edf3f8', border: 'none', borderRadius: '4px', fontSize: '14px' }} />
-              <div style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: '#666' }}>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 001.437-3.87 5.946 5.946 0 10-5.947 5.947 5.92 5.92 0 003.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574zm-5.489 0A4.111 4.111 0 011.83 5.946 4.111 4.111 0 016.946 1.83 4.111 4.111 0 0111.057 5.946 4.111 4.111 0 016.946 10.063z"/></svg>
+            {!isMobile && (
+              <div style={{ position: 'relative', width: '280px' }}>
+                <input type="text" placeholder="Search" style={{ width: '100%', padding: '8px 12px 8px 36px', backgroundColor: '#edf3f8', border: 'none', borderRadius: '4px', fontSize: '14px' }} />
+                <div style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: '#666' }}>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 001.437-3.87 5.946 5.946 0 10-5.947 5.947 5.92 5.92 0 003.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574zm-5.489 0A4.111 4.111 0 011.83 5.946 4.111 4.111 0 016.946 1.83 4.111 4.111 0 0111.057 5.946 4.111 4.111 0 016.946 10.063z"/></svg>
+                </div>
               </div>
-            </div>
+            )}
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-            {[
+          <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '8px' : '24px' }}>
+            {!isMobile && [
               { label: 'Home', icon: <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7z" /> },
               { label: 'My Network', icon: <path d="M12 16a4 4 0 114-4 4 4 0 01-4 4zm7-9a3 3 0 113-3 3 3 0 01-3 3zm3 15h-1v-2a3 3 0 00-3-3H7a3 3 0 00-3 3v2H3v-2a5 5 0 015-5h8a5 5 0 015 5z" /> },
               { label: 'Jobs', icon: <path d="M17 6V4a2 2 0 00-2-2H9a2 2 0 00-2 2v2H2v13a2 2 0 002 2h16a2 2 0 002-2V6h-5zM9 4h6v2H9V4zm11 15H4V8h16v11z" /> },
@@ -131,9 +155,10 @@ export const LinkedInProfileView: React.FC<LinkedInProfileProps> = ({ resultId, 
                 <span style={{ fontSize: '12px', marginTop: '4px' }}>{item.label}</span>
               </div>
             ))}
-            <div style={{ borderLeft: '1px solid #e0e0e0', height: '32px', margin: '0 8px' }} />
-            <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '8px', color: '#666' }}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 18L18 6M6 6l12 12" /></svg>
+            {!isMobile && <div style={{ borderLeft: '1px solid #e0e0e0', height: '32px', margin: '0 8px' }} />}
+            <button onClick={onClose} style={{ backgroundColor: '#0a66c2', color: 'white', border: 'none', borderRadius: '24px', padding: isMobile ? '6px 12px' : '8px 16px', cursor: 'pointer', fontWeight: 600, fontSize: isMobile ? '12px' : '14px', display: 'flex', alignItems: 'center', gap: '4px', whiteSpace: 'nowrap' }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Back to search
             </button>
           </div>
         </div>
@@ -152,12 +177,12 @@ export const LinkedInProfileView: React.FC<LinkedInProfileProps> = ({ resultId, 
           alignItems: 'center', 
           boxShadow: '0 2px 4px rgba(0,0,0,0.1)' 
         }}>
-          <div style={{ maxWidth: '1128px', margin: '0 auto', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px' }}>
+          <div style={{ maxWidth: '1128px', margin: '0 auto', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: isMobile ? '0 8px' : '0 24px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <img src={getFakeImageUrl(resultId, 'avatar')} style={{ width: '32px', height: '32px', borderRadius: '50%', filter: 'blur(4px)' }} alt="" />
               <div>
                 <div style={{ fontSize: '14px', fontWeight: 600 }}>{profile.name}</div>
-                <div style={{ fontSize: '12px', color: '#666', maxWidth: '400px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{profile.headline}</div>
+                <div style={{ fontSize: '12px', color: '#666', maxWidth: isMobile ? '150px' : '400px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{profile.headline}</div>
               </div>
             </div>
             <div style={{ display: 'flex', gap: '8px' }}>
@@ -169,15 +194,15 @@ export const LinkedInProfileView: React.FC<LinkedInProfileProps> = ({ resultId, 
         </div>
       )}
 
-      <div style={{ maxWidth: '1128px', margin: '24px auto', display: 'flex', gap: '24px', padding: '0 24px' }}>
+      <div style={{ maxWidth: '1128px', margin: '24px auto', display: 'flex', flexDirection: isMobile ? 'column' : 'row', gap: '24px', padding: isMobile ? '0 8px' : '0 24px' }}>
         <div style={{ flex: 1 }}>
           {/* Header Card */}
           <div style={{ backgroundColor: 'white', borderRadius: '8px', border: '1px solid #e0e0e0', overflow: 'hidden', marginBottom: '12px' }}>
-            <div style={{ height: '200px', backgroundColor: '#d0d7de', position: 'relative' }}>
+            <div style={{ height: isMobile ? '120px' : '200px', backgroundColor: '#d0d7de', position: 'relative' }}>
             </div>
-            <div style={{ padding: '0 24px 24px', position: 'relative' }}>
-              <div style={{ marginTop: '-112px', marginBottom: '16px' }}>
-                <div style={{ position: 'relative', width: '160px', height: '160px' }}>
+            <div style={{ padding: isMobile ? '0 12px 16px' : '0 24px 24px', position: 'relative' }}>
+              <div style={{ marginTop: isMobile ? '-60px' : '-112px', marginBottom: '16px' }}>
+                <div style={{ position: 'relative', width: isMobile ? '100px' : '160px', height: isMobile ? '100px' : '160px' }}>
                   <img src={getFakeImageUrl(resultId, 'avatar')} style={{ width: '100%', height: '100%', borderRadius: '50%', border: '4px solid white', objectFit: 'cover', filter: 'blur(8px)' }} alt="" />
                   {isAdeeb && (
                     <div style={{ 
@@ -209,10 +234,10 @@ export const LinkedInProfileView: React.FC<LinkedInProfileProps> = ({ resultId, 
                   )}
                 </div>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between' }}>
                 <div style={{ flex: 1 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <h1 style={{ fontSize: '24px', fontWeight: 600 }}>{profile.name}</h1>
+                    <h1 style={{ fontSize: isMobile ? '20px' : '24px', fontWeight: 600 }}>{profile.name}</h1>
                     {isAdeeb && (
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a66c2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                     )}
