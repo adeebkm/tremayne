@@ -6357,53 +6357,16 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     imageKey: "tremayne-linkedin-dir"
   },
   {
-    id: "tremayne2",
-    platform: "Howard, Kohn, Sprague & FitzGerald, LLP",
-    displayName: "Tremayne Washington",
-    snippet: "Aug 22, 2024 — Attorney Krieger was admitted to the Connecticut bar in 2001 and joined the firm in 2004. He is also admitted to the Federal bar for the ...Read more",
-    urlLike: "hksflaw.com › People",
-    discoverability: "High",
-    footprint: "Present",
-    race: "African American",
-    location: "Connecticut",
-    imageKey: "tremayne-hksf"
-  },
-  {
-    id: "tremayne3",
-    platform: "Instagram",
-    displayName: "Tremayne Washington (@deerrockknives)",
-    snippet: "1.6K+ followers · 206 following · 358 posts · @deerrockknives: “I use the good shit 'cause I like the way it cuts Guide/former conservation specialist Ultra ...",
-    urlLike: "Instagram · deerrockknives",
-    discoverability: "High",
-    footprint: "Present",
-    race: "African American",
-    location: "",
-    followers: "1.6K+",
-    imageKey: "tremayne-insta"
-  },
-  {
-    id: "tremayne4",
-    platform: "Lafayette College Athletics",
-    displayName: "Tremayne Washington - 2011 Football Roster",
-    snippet: "Lafayette College Athletics · 2011 Football Roster · 69 Tremayne Washington. Pos. OL. Yr. Senior. Ht. 6-4. Weight 290. Hometown Belvidere, N.J.. High School Belvidere.Read more",
-    urlLike: "goleopards.com › sports › roster › tremayne-krieger",
-    discoverability: "High",
-    footprint: "Present",
-    race: "African American",
-    location: "Belvidere, N.J.",
-    imageKey: "tremayne-football"
-  },
-  {
     id: "tremayne5",
     platform: "LinkedIn",
-    displayName: "Tremayne Washington - dsm-firmenich",
-    snippet: "590+ followers · Blairstown, New Jersey, United States · dsm-firmenich · Experience: dsm-firmenich · Education: Lafayette College · Location: Blairstown · 500+ connections on LinkedIn. View Tremayne Washington's profile on LinkedIn, ...",
+    displayName: "Tremayne Washington - Chicago Investment Partners",
+    snippet: "290+ followers · Chicago, Illinois, United States · Chicago Investment Partners · Experience: Chicago Investment Partners · Education: University of Michigan · Location: Chicago · 340+ connections on LinkedIn. View Tremayne Washington's profile on LinkedIn, ...",
     urlLike: "LinkedIn · Tremayne Washington",
     discoverability: "High",
     footprint: "Present",
     race: "African American",
-    location: "Blairstown, New Jersey",
-    followers: "590+",
+    location: "Chicago, Illinois",
+    followers: "290+",
     imageKey: "tremayne-linkedin-profile"
   },
   {
@@ -6417,6 +6380,43 @@ export const RESULTS_Brycen_Tremayne: SimResult[] = [
     race: "African American",
     location: "",
     imageKey: "tremayne-facebook"
+  },
+  {
+    id: "tremayne2",
+    platform: "Howard, Kohn, Sprague & FitzGerald, LLP",
+    displayName: "Tremayne Washington",
+    snippet: "Aug 22, 2024 — Attorney Washington was admitted to the Connecticut bar in 2001 and joined the firm in 2004. He is also admitted to the Federal bar for the ...Read more",
+    urlLike: "hksflaw.com › People",
+    discoverability: "High",
+    footprint: "Present",
+    race: "African American",
+    location: "Connecticut",
+    imageKey: "tremayne-hksf"
+  },
+  {
+    id: "tremayne3",
+    platform: "Instagram",
+    displayName: "Tremayne Washington (@deerrockknives)",
+    snippet: "1.6K+ followers · 206 following · 358 posts · @deerrockknives: "I use the good shit 'cause I like the way it cuts Guide/former conservation specialist Ultra ...",
+    urlLike: "Instagram · deerrockknives",
+    discoverability: "High",
+    footprint: "Present",
+    race: "African American",
+    location: "",
+    followers: "1.6K+",
+    imageKey: "tremayne-insta"
+  },
+  {
+    id: "tremayne4",
+    platform: "Lafayette College Athletics",
+    displayName: "Tremayne Washington - 2011 Football Roster",
+    snippet: "Lafayette College Athletics · 2011 Football Roster · 69 Tremayne Washington. Pos. OL. Yr. Senior. Ht. 6-4. Weight 290. Hometown Belvidere, N.J.. High School Belvidere.Read more",
+    urlLike: "goleopards.com › sports › roster › tremayne-washington",
+    discoverability: "High",
+    footprint: "Present",
+    race: "African American",
+    location: "Belvidere, N.J.",
+    imageKey: "tremayne-football"
   },
   {
     id: "tremayne7",
