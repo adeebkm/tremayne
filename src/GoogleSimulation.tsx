@@ -25,6 +25,12 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
   const [isMobile, setIsMobile] = useState(false);
   const resultsPerPage = 10;
 
+  // Read footprint condition from URL parameter (?condition=absent)
+  const footprintCondition = useMemo(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('condition') || 'present';
+  }, []);
+
   // Force light mode as requested
   const isDark = false;
 
@@ -60,7 +66,7 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
     }
   }, [currentPage]);
 
-  // Get results for Tremayne
+  // Get results for Tremayne (filter out LinkedIn/Facebook in footprint absent condition)
   const allResults = useMemo(() => {
     console.log('Loading RESULTS_Brycen_Tremayne:', RESULTS_Brycen_Tremayne);
     if (!RESULTS_Brycen_Tremayne || RESULTS_Brycen_Tremayne.length === 0) {
@@ -68,8 +74,13 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
       return [];
     }
     console.log('Loaded', RESULTS_Brycen_Tremayne.length, 'results');
+    if (footprintCondition === 'absent') {
+      return RESULTS_Brycen_Tremayne.filter(
+        r => r.platform !== 'LinkedIn' && r.platform !== 'Facebook'
+      );
+    }
     return RESULTS_Brycen_Tremayne;
-  }, []);
+  }, [footprintCondition]);
 
   // Filter results by active tab
   const filteredResults = useMemo(() => {
@@ -117,7 +128,7 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
     return (
       <div style={{ padding: '20px', textAlign: 'center' }}>
         <h1>No results found</h1>
-        <p>Greg Krieger results are not available.</p>
+        <p>Tremayne Washington results are not available.</p>
       </div>
     );
   }
@@ -131,9 +142,12 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
         {/* Back to survey button - outside the results column */}
         <div style={{ paddingTop: isMobile ? '12px' : '20px', paddingBottom: '8px' }}>
           <button
-            onClick={(e) => {
-              e.preventDefault();
-              // Non-functional for now
+            onClick={() => {
+              const params = new URLSearchParams(window.location.search);
+              const returnUrl = params.get('returnUrl');
+              if (returnUrl) {
+                window.location.href = returnUrl;
+              }
             }}
             style={{
               backgroundColor: '#1a73e8',
@@ -157,7 +171,7 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M19 12H5M12 19l-7-7 7-7"/>
             </svg>
-            <span>Back to survey</span>
+            <span>Done Searching</span>
           </button>
         </div>
         <div style={{ display: 'flex', gap: isMobile ? '0' : '32px' }}>
@@ -212,6 +226,8 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
                         onOpen={(result) => {
                           // Track the click for all results
                           trackResultClick(result.id, result.platform, result.displayName, 'tremayne');
+                          // In footprint absent condition, no profiles open
+                          if (footprintCondition === 'absent') return;
                           // Only open LinkedIn and Facebook profiles
                           if (result.platform === 'LinkedIn' || result.platform === 'Facebook') {
                             setSelectedResult(result);
