@@ -5,7 +5,7 @@ import { ResultCard } from './components/ResultCard';
 import { LinkedInProfileView as LinkedInProfile } from './components/LinkedInProfile';
 import { FacebookProfileView as FacebookProfile } from './components/FacebookProfile';
 import { PeopleAlsoSearchFor } from './components/PeopleAlsoSearchFor';
-import { ImagesSection } from './components/ImagesSection';
+
 import {
   RESULTS_Brycen_Tremayne,
   type SimResult
@@ -192,35 +192,8 @@ const GoogleSimulation: React.FC<GoogleSimulationProps> = ({ searchType = 'trema
             ) : (
               <div>
                 {paginatedResults.map((result, index) => {
-                  const shouldShowTremayneImages = currentPage === 1 && index === 0;
-                  
                   return (
                     <React.Fragment key={result.id}>
-                      {shouldShowTremayneImages && (
-                        <ImagesSection
-                          images={[
-                            {
-                              id: 'tremayne-img-1',
-                              title: 'Tremayne Washington – LinkedIn',
-                              source: 'LinkedIn',
-                              imageUrl: 'https://www.blackmenshealth.com/wp-content/uploads/2022/09/My-Headshot-1-500x497.jpg'
-                            },
-                            {
-                              id: 'tremayne-img-2',
-                              title: 'Tremayne Washington – Facebook',
-                              source: 'Facebook',
-                              imageUrl: 'https://images.unsplash.com/photo-1578758837674-93ed0ab5fbab?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWZyaWNhbiUyMGFtZXJpY2FuJTIwbWFufGVufDB8fDB8fHww'
-                            },
-                            {
-                              id: 'tremayne-img-3',
-                              title: 'Tremayne Washington – Profile',
-                              source: 'Professional Network',
-                              imageUrl: '/Photos/Race - Black - Male/4fd6816a-d38e-4748-9f63-f5c712f073ae.jpg'
-                            }
-                          ]}
-                          isDark={isDark}
-                        />
-                      )}
                       <ResultCard
                         result={result}
                         onOpen={(result) => {
